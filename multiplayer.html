@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Devinette</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <div class="container">
+                    <span>
+                        <button class="dropbtn"><a href="page.html">Menu</a></button>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </ul>
+
+    </header>
+    <HR> 
+<div id="setup">
+    <h2>Configuration des codes</h2>
+    <div id="player1-setup">
+        <p>Joueur 1, entrez votre code secret :</p>
+        <input type="text" id="codeInput1" maxlength="4" placeholder="Entrez 4 chiffres uniques">
+        <button id="setCodeButton1">Valider le code</button>
+    </div>
+    <div id="player2-setup" style="display:none;">
+        <p>Joueur 2, entrez votre code secret :</p>
+        <input type="text" id="codeInput2" maxlength="4" placeholder="Entrez 4 chiffres uniques">
+        <button id="setCodeButton2">Valider le code</button>
+    </div>
+</div>
+
+<div id="game" style="display:none;">
+    <div id="player1">
+        <h2>Joueur 1</h2>
+        <p>Essayez de deviner le code à 4 chiffres du Joueur 2. Tous les chiffres sont uniques.</p>
+        <input type="text" id="userInput1" maxlength="4" placeholder="Entrez 4 chiffres">
+        <button id="checkCodeButton1">Vérifier</button>
+        <div class="result" id="result1"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code essayé</th>
+                    <th>Chiffres corrects</th>
+                    <th>À la bonne place</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTable1">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="player2">
+        <h2>Joueur 2</h2>
+        <p>Essayez de deviner le code à 4 chiffres du Joueur 1. Tous les chiffres sont uniques.</p>
+        <input type="text" id="userInput2" maxlength="4" placeholder="Entrez 4 chiffres">
+        <button id="checkCodeButton2">Vérifier</button>
+        <div class="result" id="result2"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code essayé</th>
+                    <th>Chiffres corrects</th>
+                    <th>À la bonne place</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTable2">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script2.js"></script>
+<footer>
+    <center>Bennani Omar - Copyright 202. Tous droits réservés
+    </center>
+  </footer>
+</body>
+</html>
